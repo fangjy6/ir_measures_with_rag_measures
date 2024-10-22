@@ -16,3 +16,4 @@ from .trectools_provider import TrectoolsProvider
 from .msmarco_provider import MsMarcoProvider
 from .ranx_provider import RanxProvider
 from .runtime_provider import RuntimeProvider, define, define_byquery
+from .rag_provider import RAGProvider

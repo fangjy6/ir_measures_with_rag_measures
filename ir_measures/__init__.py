@@ -35,6 +35,7 @@ msmarco = providers.registry['msmarco']
 pyndeval = providers.registry['pyndeval']
 ranx = providers.registry['ranx']
 runtime = providers.registry['runtime']
+rag_eval = providers.registry["rag_eval"]
 
 define = providers.define
 define_byquery = providers.define_byquery
@@ -53,6 +54,7 @@ DefaultPipeline = providers.FallbackProvider([
     gdeval,  # doesn't work when installed from package #9
     accuracy,
     ranx,
+    rag_eval, 
 ])
 evaluator = DefaultPipeline.evaluator
 calc_ctxt = DefaultPipeline.calc_ctxt # deprecated; replaced with evaluator

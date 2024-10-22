@@ -34,6 +34,7 @@ from .rr import RR, MRR, _RR
 from .sdcg import SDCG, _SDCG
 from .set_measures import SetP, SetRelP, _SetP, SetR, _SetR, SetF, _SetF, SetAP, _SetAP
 from .success import Success, _Success
+from .rag import EM, F1, _EM, _F1, exact_match, f1
 
 # enable from "ir_measures.measures import *" --- on purpuse, do not include _-prefixed versions,
 # as these are intended for internal use
